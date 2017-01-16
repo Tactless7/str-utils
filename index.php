@@ -18,4 +18,8 @@
 		public function underline(){
 			return '<u>'. $string .'</u>';
 		}
+
+		public function capitalize($string){
+			return ucfirst($string);
+		}
 	}
