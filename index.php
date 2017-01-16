@@ -3,8 +3,8 @@
 	class StrUtils {
 		private $_str;
 		
-		__constructor(){
-
+		__constructor($string){
+			$this->_str = $string;
 		}
 
 		public function bold($string){
