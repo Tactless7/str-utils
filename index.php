@@ -3,23 +3,39 @@
 	class StrUtils {
 		private $_str;
 		
-		private function __construct($string){
+		public function __construct($string){
 			$this->_str = $string;
 		}
 
 		public function bold(){
-			return '<strong>'. $this->_str .'</strong>';
+			$this->_str = '<strong>'. $this->_str .'</strong>';
+			return $this->_str;
 		}
 
 		public function italic(){
-			return '<em>'. $this->_str .'</em>';
+			$this->_str = '<em>'. $this->_str .'</em>';
+			return $this->_str;
 		}
 
 		public function underline(){
-			return '<u>'. $this->_str .'</u>';
+			$this->_str = '<u>'. $this->_str .'</u>';
+			return $this->_str;
 		}
 
 		public function capitalize(){
-			return ucfirst($this->_str);
+			$this->_str = ucfirst($this->_str);
+			return $this->_str;
+		}
+
+		public function uglify(){
+
+
 		}
 	}
+
+	$myString = new StrUtils('php is awesome !');
+	echo $myString->bold();
+	echo $myString->italic();
+	echo $myString->underline();
+	echo $myString->capitalize();
+	// echo $myString->uglify();
