@@ -7,5 +7,7 @@
 
 		}
 
-		
+		public function bold($string){
+			return '<strong>'. $string .'</strong>';
+		}
 	}
