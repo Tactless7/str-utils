@@ -28,14 +28,15 @@
 		}
 
 		public function uglify(){
-
-
+			$this->bold();
+			$this->italic();
+			return $this->underline();
 		}
 	}
 
 	$myString = new StrUtils('php is awesome !');
-	echo $myString->bold();
-	echo $myString->italic();
-	echo $myString->underline();
-	echo $myString->capitalize();
-	// echo $myString->uglify();
+	// echo $myString->bold();
+	// echo $myString->italic();
+	// echo $myString->underline();
+	// echo $myString->capitalize();
+	echo $myString->uglify();
