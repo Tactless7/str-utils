@@ -2,7 +2,10 @@
 
 	class StrUtils {
 		private $_str;
-		constructor(){
+		
+		__constructor(){
 
 		}
+
+		
 	}
