@@ -10,4 +10,8 @@
 		public function bold($string){
 			return '<strong>'. $string .'</strong>';
 		}
+
+		public function italic(){
+			return '<em>'. $string .'</em>';
+		}
 	}
