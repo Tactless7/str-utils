@@ -14,4 +14,8 @@
 		public function italic(){
 			return '<em>'. $string .'</em>';
 		}
+
+		public function underline(){
+			return '<u>'. $string .'</u>';
+		}
 	}
